@@ -318,5 +318,55 @@ for (let i = 0; i < 5; i++) {
 
 
 
+## **4. Objeto Literal: Funcionalidades Básicas**
+
+Objetos literais são estruturas que armazenam dados e funcionalidades relacionadas.
+
+### **Propriedades e Métodos**
+
+```javascript
+const pessoa = {
+  nome: "Ana", // propriedade
+  idade: 30,
+  cumprimentar: function() { // método
+    return `Olá`;
+  }
+};
+console.log(pessoa.cumprimentar()); // "Olá"
+```
+
+
+### **Atualização Dinâmica**
+
+```javascript
+pessoa.profissao = "Engenheira"; // Adiciona nova propriedade
+delete pessoa.idade; // Remove propriedade
+```
+
+
+### **Shorthand Notation**
+
+```javascript
+const nome = "Carlos";
+const idade = 25;
+const usuario = { nome, idade }; // { nome: "Carlos", idade: 25 }
+```
+
+
+### **Métodos Simplificados**
+
+```javascript
+const calculadora = {
+  somar(a, b) { // Sintaxe simplificada
+    return a + b;
+  }
+};
+console.log(calculadora.somar(2,3)); // 5
+```
+
+
+
+
+
 
 
