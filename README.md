@@ -93,3 +93,63 @@ O switch é ideal para comparar uma variável com vários valores possíveis, co
 
 ---
 
+## **Operadores em JavaScript**
+
+### **Aritméticos**
+
+- `+` (adição),
+- `-` (subtração),
+- `*` (multiplicação),
+- `/` (divisão),
+- `%` (divisão de resto),
+- `**` (exponenciação),
+- `++` (incremento),
+- `--` (decremento).
+- **Exemplo**: calcular desconto, somar itens de um carrinho, atualizar pontuação.
+
+
+### **Atribuição**
+
+- `=` (atribuição)
+- **Exemplo**: `var total = 10` atribuir o valor 10 ao total.
+
+
+### **Comparação (relacionais)**
+
+- `==` (igualdade),
+- `!=` (diferente),
+- `===` (igualdade estrita),
+- `!==` (diferença estrita),
+- `>` (maior que),
+- `<` (menor que),
+- `>=` (maior ou igual),
+- `<=` (menor ou igual),
+- **Exemplo**: validar senha, comparar idades, filtrar produtos por preço.
+
+
+### **Lógicos**
+
+- `&&` (E): todas as condições devem ser verdadeiras.
+- `||` (OU): pelo menos uma condição precisa ser verdadeira.
+- `!` (NÃO): inverte o valor booleano[^10][^20].
+- **Exemplo**: liberar acesso só para maiores de idade com cadastro ativo (`idade &gt;= 18 &amp;&amp; ativo`).
+
+
+### **Ternário**
+
+- Sintaxe: `condição ? valorSeVerdadeiro : valorSeFalso`
+- **Exemplo**:
+
+```javascript
+let status = idade &gt;= 18 ? "Adulto" : "Menor";
+```
+
+
+### **De uso prático**
+
+- **Matemáticos**: calcular notas, médias, descontos.
+- **Relacionais**: decidir se um aluno passou, se um produto está disponível.
+- **Lógicos**: validar múltiplos critérios de acesso, filtrar dados em sistemas.
+
+
+
