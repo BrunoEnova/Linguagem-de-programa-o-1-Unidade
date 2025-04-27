@@ -170,8 +170,6 @@ A precedência dos operadores determina a ordem em que as operações são reali
 | 7 | `==`, `!=`, `===`, `!==` | Igualdade e diferença |
 | 8 | `&&` | Operador lógico E |
 | 9 | `\|\|`  | Operador lógico OU |
-| 10 | `? :` | Operador ternário |
-| 11 | `=`, `+=`, `-=`, etc. | Atribuição e compostos |
 
 
 ---
