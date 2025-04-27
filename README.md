@@ -150,6 +150,133 @@ let status = idade &gt;= 18 ? "Adulto" : "Menor";
 - **Matemáticos**: calcular notas, médias, descontos.
 - **Relacionais**: decidir se um aluno passou, se um produto está disponível.
 - **Lógicos**: validar múltiplos critérios de acesso, filtrar dados em sistemas.
+- 
+
+
+## Precedência dos Operadores em JavaScript
+
+A precedência dos operadores determina a ordem em que as operações são realizadas em uma expressão. Operadores com maior precedência são avaliados antes dos de menor precedência. Isso é fundamental para evitar erros e garantir que as expressões sejam interpretadas corretamente pelo JavaScript.
+
+### Ordem de Precedência
+
+| Prioridade | Operadores | Descrição |
+| :-- | :-- | :-- |
+| 1 | `()` | Parênteses (forçam avaliação) |
+| 2 | `!` | Operador lógico NOT |
+| 3 | `**` | Exponenciação |
+| 4 | `*`, `/`, `%` | Multiplicação, divisão, módulo |
+| 5 | `+`, `-` | Adição e subtração |
+| 6 | `>`, `>=`, `<`, `<=` | Operadores relacionais |
+| 7 | `==`, `!=`, `===`, `!==` | Igualdade e diferença |
+| 8 | `&&` | Operador lógico E |
+| 9 | `||` | Operador lógico OU |
+| 10 | `? :` | Operador ternário |
+| 11 | `=`, `+=`, `-=`, etc. | Atribuição e compostos |
+
+
+---
+
+### Exemplos Práticos
+
+#### 1. **Atribuição**
+
+- `=` (atribuição): atribui valor a uma variável.
+
+```javascript
+var total = 10; // total recebe 10
+```
+
+
+#### 2. **Comparação (Relacionais)**
+
+- `==`, `!=`, `===`, `!==`, `>`, `<`, `>=`, `<=`
+
+```javascript
+let idade = 18;
+console.log(idade == "18");   // true  (valor igual, tipo ignorado)
+console.log(idade === "18");  // false (valor igual, tipo diferente)
+console.log(idade > 16);      // true
+console.log(idade <= 17);     // false
+```
+
+
+#### 3. **Lógicos**
+
+- `&&` (E): todas as condições devem ser verdadeiras.
+- `||` (OU): ao menos uma condição deve ser verdadeira.
+- `!` (NÃO): inverte o valor booleano.
+
+```javascript
+let maiorDeIdade = idade >= 18;
+let ativo = true;
+console.log(maiorDeIdade && ativo); // true
+console.log(maiorDeIdade || false); // true
+console.log(!ativo);                // false
+```
+
+
+#### 4. **Ternário**
+
+- Sintaxe: `condição ? valorSeVerdadeiro : valorSeFalso`
+
+```javascript
+let status = idade >= 18 ? "Adulto" : "Menor"; // "Adulto"
+```
+
+
+---
+
+### Como a Precedência Afeta o Resultado
+
+#### Sem Parênteses:
+
+```javascript
+let resultado = 3 + 4 * 2; // Multiplicação primeiro: 3 + 8 = 11
+```
+
+
+#### Com Parênteses:
+
+```javascript
+let resultado2 = (3 + 4) * 2; // Soma primeiro: 7 * 2 = 14
+```
+
+
+#### Operador NOT com E Lógico:
+
+```javascript
+let a = true;
+let b = false;
+console.log(!a && b); // !a é false, então false && false = false
+```
+
+
+#### Operador Ternário após Lógicos:
+
+```javascript
+let idade = 20;
+let status = idade >= 18 ? "Adulto" : "Menor"; // condição avaliada antes do ?
+```
+
+
+#### Atribuição é a Última:
+
+```javascript
+let x = 10 + 5 * 2; // 5*2 = 10, 10+10 = 20, depois atribui a x
+```
+
+
+---
+
+### Resumo
+
+- Sempre que necessário, use parênteses para garantir a ordem desejada.
+- Multiplicação, divisão e módulo vêm antes de adição e subtração.
+- Comparações vêm antes dos operadores lógicos (`&&`, `||`).
+- O operador ternário é avaliado depois dos lógicos.
+- Atribuição é sempre a última operação na expressão.
+
+Essas regras ajudam a evitar ambiguidades e bugs em expressões mais complexas.
 
 
 
