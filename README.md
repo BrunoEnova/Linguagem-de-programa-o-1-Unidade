@@ -365,7 +365,7 @@ console.log(calculadora.somar(2,3)); // 5
 ```
 
 
-<div style="text-align: center"Link de referências e material extra de estudo</div>
+<div style="text-align: center">Link de referências e material extra de estudo</div>
 
 - https://universidadedatecnologia.com.br/o-que-e-linguagem-de-programacao/
 - https://pt.linkedin.com/pulse/importância-das-linguagens-de-programação-mundo-moderno-kelly-costa-zsrpf
