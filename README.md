@@ -263,9 +263,6 @@ let status = idade >= 18 ? "Adulto" : "Menor"; // condição avaliada antes do ?
 let x = 10 + 5 * 2; // 5*2 = 10, 10+10 = 20, depois atribui a x
 ```
 
-
----
-
 ### Resumo
 
 - Sempre que necessário, use parênteses para garantir a ordem desejada.
@@ -275,6 +272,51 @@ let x = 10 + 5 * 2; // 5*2 = 10, 10+10 = 20, depois atribui a x
 - Atribuição é sempre a última operação na expressão.
 
 Essas regras ajudam a evitar ambiguidades e bugs em expressões mais complexas.
+
+---
+
+## **Estruturas de repetição**
+
+Permitem executar um bloco de código várias vezes.
+
+### **while**
+
+Executa enquanto a condição for verdadeira:
+
+```javascript
+let i = 0;
+while (i &lt; 3) {
+  console.log(i);
+  i++;
+}
+```
+
+Usado quando não se sabe quantas vezes será necessário repetir[^11].
+
+### **do...while**
+
+Garante ao menos uma execução:
+
+```javascript
+let senha;
+do {
+  senha = prompt("Digite a senha:");
+} while (senha !== "1234");
+```
+
+Útil para validação de entrada de usuário[^12].
+
+### **for**
+
+Estrutura mais usada, especialmente quando se sabe o número de repetições:
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log(i); // 0 a 4
+}
+```
+
+
 
 
 
